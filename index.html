@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/pizza.webp" />
+    <meta name="description"
+      content="Hot, fresh pizza delivered fast to your door! Order online for delicious pizzas, sides, and drinks. Fast delivery, great prices, and unbeatable taste."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Delivery</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "PizzaApp",
+      "servesCuisine": "Pizza",
+      "url": "https://yourpizzaapp.com",
+      "address": {
+        "@type": "Postal Address",
+        "addressLocality": "ُEgypt/Sohag",
+        "addressCountry": "EGY"
+      }
+    }
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+
+.image img {
+    display: block;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+}
+
+.info > * { 
+    margin-bottom: 0.5rem;
+}
+
+
+.title {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.info p strong {
+    font-size: 1.1rem;
+}
+
+.info p :not(strong) {
+    color: #666;
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+}
+
+.soldOut {
+    margin: auto;
+    font-size: 1.2rem;
+    display: block;
+    width: fit-content;
+}
+
+.soldOut {
+    font-weight: bold;
+    color: #999;
+}
+
+.notFound {
+    text-align: center;
+    margin-top: 4rem; 
+}
