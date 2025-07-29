@@ -65,3 +65,6 @@ export const DeliveryArea = {
 ## 📦 Technologies Used
 | Frontend  | React, Vite, TypeScript, CSS Modules |
 | Maps      | Leaflet, OpenStreetMap               |
+
+### Take a peek at our website
+pizza-delivery-app-blue.vercel.app
