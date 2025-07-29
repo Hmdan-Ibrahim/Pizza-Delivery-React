@@ -34,6 +34,15 @@ A complete pizza ordering system built with React, Vite, TypeScript, interact wi
 
 ---
 
+🎯 Goals
+
+Improve customer experience.
+Provide easy content management for admins.
+Performance & Optimization
+Feel free to share feedback, suggestions, or reach out for potential collaborations!
+
+---
+
 ## 🧪 Future Enhancements
 
 - Add user authentication (Sign In / Sign Up)
