@@ -1,17 +1,19 @@
+import type { LoaderFunctionArgs } from "react-router-dom";
 import { getFromCache, setCache } from "../../../cache";
 import { getOrder } from "../../../services/pizza.api";
 
-interface iParams {
-  orderId: string;
-}
-
 const orderCacheKey = "orderDetails"
 
-export async function orderLoader({ params }: { params: iParams }) {
-  let order = getFromCache(orderCacheKey)
-  if(order?.orderId === params.orderId) return order
+export async function orderLoader({ params }: LoaderFunctionArgs) {
+  const { orderId } = params;
 
-  order = await getOrder(params.orderId);
-  setCache(orderCacheKey, order)
+  if (!orderId) {
+    throw new Error("No pizzaId provided");
+  }
+  let order = getFromCache(orderCacheKey);
+  if (order?.orderId === orderId) return order;
+
+  order = await getOrder(orderId);
+  setCache(orderCacheKey, order);
   return order;
 }
